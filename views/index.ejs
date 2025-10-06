@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitLab Dashboard</title>
+</head>
+<body>
+    <h1>My GitLab Projects</h1>
+    <ul>
+        <% projects.forEach(project => { %>
+            <li>
+            <strong><%= project.name %></strong> - <%= project.description || 'No description' %>
+            - <a href="/project/<%= project.id %>">Details</a>
+            - <a href="<%= project.web_url %>" target="_blank">View on GitLab</a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
