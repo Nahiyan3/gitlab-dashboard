@@ -5,8 +5,14 @@
 </head>
 <body>
     <h1>Project: <%= project.name %></h1>
-    <p>Description: <%= project.description || 'No description' %></p>
     <p>Total commits (first page): <%= totalCommits %></p>
+    <p>Total issues: <%= totalIssues %></p>
+    <p>Open issues: <%= openIssues %></p>
+    <p>Closed issues: <%= closedIssues %></p>
+    <p>Total branches: <%= totalBranches %></p>
+    <p>Open merge requests: <%= openMR %></p>
+    <p>Closed merge requests: <%= closedMR %></p>
+    <p>Merged merge requests: <%= mergedMR %></p>
     <p>Web URL: <a href="<%= project.web_url %>" target="_blank"><%= project.web_url %></a></p>
     <a href="/">Back to all projects</a>
 </body>
